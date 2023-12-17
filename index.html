@@ -17,7 +17,10 @@
     <!-- inline style -->
     <style>
         body{
+            margin: 0;
+            padding: 0;
             font-family: 'Kalnia', serif;
+            /* background-color: #dbd9d9; */
         }
         .navigation{
             display: flex;
@@ -44,6 +47,10 @@
             text-decoration: none;
             color: black;
             font-size: 20px;
+            transition: all 3s;
+        }
+        li:hover a{
+color: rgb(127, 127, 199);
         }
         li input{
             width: 200px;
@@ -54,16 +61,25 @@
 
 
         }
+        .logo{
+            display: flex;
+            margin-left: 30px;
+            align-items: center;
+        }
 .logo img{
     width: 50px;
     height: 50px;
     border-radius: 50px;
+
 }
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    width: 100%;
+    height: 350px;
+    background-color: #dbd9d9;
 }
 .row{
     width: 900px;
@@ -104,7 +120,7 @@ p{
     column-gap: 30px;
     color: rgb(109, 109, 243);
 }
-.text{
+.text p{
     text-align: center;
 }
 .arrow{
@@ -115,6 +131,46 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.quotes{
+    width: 880px;
+    height: 370px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.content2{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.parag{
+    padding: 20px;
+    text-align: justify;
+}
+.image{
+    /* margin-left: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.footer{
+    background-color: #dbd9d9;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 200px;
 }
     </style>
 </head>
@@ -153,6 +209,49 @@ p{
                 </div>
             </div>
         </div>
+        <section class="content2">
+ <!-- feedback -->
+ <div class="quotes">
+<div class="q-1">
+    <div class="image">
+        <img src="https://th.bing.com/th/id/OIP.Tj4Sovyil-YRKYCFzD2rMwHaEo?rs=1&pid=ImgDetMain" alt="img-1">
+    </div>
+   
+<p class="parag">
+    <i class="fa-solid fa-quote-left fa-beat-fade"></i> &nbsp;
+Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+ Excepturi facere numquam ducimus! Vero architecto, <br> 
+ 
+</p>
+</div>
+<div class="q-2">
+    <div class="image">
+        <img src="https://wallpaperaccess.com/full/2562973.jpg" alt="img-2">
+    </div>
+    
+<p class="parag">
+    <i class="fa-solid fa-quote-left fa-beat-fade"></i> &nbsp;
+Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+ Excepturi facere numquam ducimus! Vero architecto, <br> 
+ iusto debitis excepturi nostrum cumque<br> 
+ repellendus qui laudantium perferendis quidem, saepe deleniti ducimus.
+</p>
+</div>
+<div class="q-3">
+    <div class="image">
+        <img src="https://wallpapercave.com/wp/wp2983703.jpg" alt="img-3">
+    </div>
+    
+<p class="parag">
+    <i class="fa-solid fa-quote-left fa-beat-fade"></i> &nbsp;
+Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+ Excepturi facere numquam ducimus! Vero architecto, <br> 
+ 
+</p>
+</div>
+
+ </div>
+        </section>
         <!-- footer -->
         <footer class="footer">
             <div class="arrow"><a href=""><i class="fa-solid fa-angle-up"></i></a> </div>
